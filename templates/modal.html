@@ -99,10 +99,9 @@ async function addNewsEntry() {
     document.dispatchEvent(new CustomEvent('newsAdded'));
 
     return false;
-
+}
 document.getElementById("newsForm").addEventListener("submit", function(e) {
     e.preventDefault();
     addNewsEntry();
 })
-}
 </script>
